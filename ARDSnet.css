@@ -28,6 +28,7 @@ header{
 input{
     margin-top:1em;
     width: 3em;
+    font-size: larger;
 }
 
 .patient{
@@ -49,8 +50,15 @@ input{
 }
 
 .volumes p{
-    display: inline;
+    display: inline;    
     font-weight: 700;
+    text-shadow: #0565a5;
+}
+
+output{
+    font-weight: 900;
+    font-size: x-large;
+    background-color: #b7c7e9;
 }
 
 footer{
@@ -58,9 +66,9 @@ footer{
     height: 1em;
 }
 
-#calcPrintButton{
+#calcButton,#printButton{
     width: 200px;
-    height: 60px;
+    height: 50px;
     background: none;
     border: 4px solid;
     color: #0565a5;
@@ -72,7 +80,7 @@ footer{
 
 }
 
-#calcPrintButton::before, #calcPrintButton::after{
+#calcButton::before, #calcButton::after, #printButton::before, #ptintButton::after{
     content: "";
     position: absolute;
     width: 14px;
@@ -82,20 +90,29 @@ footer{
     transition: .4s linear;
 }
 
-#calcPrintButton::before{
+#calcButton::before, #printButton::before{
     top: -4px;
     left: 10%;
 }
 
-#calcPrintButton::after{
+#calcButton::after, #printButton::after{
     bottom: -4px;
     right: 10%;
 }
 
-#calcPrintButton:hover::before{
+#calcButton:hover::before, #printButton:hover::before{
     left: 80%;
 }
 
-#calcPrintButton:hover::after{
+#calcButton:hover::after, #printButton:hover::after{
     right: 80%;
 }
+
+@media print {
+    #printButton {
+        display :  none;
+    }
+
+    body {
+        page-break-inside: avoid;
+      }

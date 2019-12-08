@@ -13,41 +13,42 @@
     </header>    
        <div class="container"> 
             <div class="radio"> 
-                <input type="radio" id="radioMale" name="gender" value="male"> Male<br>
-                <input type="radio" id="radioFemale" name="gender" value="female"> Female<br>
+                <input type="radio" id="radioMale" name="gender" value="male" checked> Male<br>
+                <input type="radio" id="radioFemale" name="gender" value="female" > Female<br>
             </div>
             <div class="patient">
-                <p>Patient's height in cm</p>
-                <input type="number" id="inputHeight" name="height" min="40" max="250" width="auto"><br>
-                <button id="calcPrintButton">Calculate and print</button>
+                <p> Patient's height in cm</p>
+                <input type="number" id="inputHeight" min="120" max="250"/> <br>
+                <button id="calcButton">Calculate</button>
+                <button id="printButton" onclick="window.print()">Print</button>
             </div>
             <div class="volumes">
                 <form>
                     <div>
                         <p>4 ml/kg</p>
-                        <input type="number" id="fourMil">
-                        <p>ml</p>
+                        <output type="number" id="fourMil">
+                        <p>___</p>
                     </div>
                     
                     <div>
                         <p>5 ml/kg</p>
-                        <input type="number" id="fiveMil">
-                        <p>ml</p>
+                        <output type="number" id="fiveMil">
+                        <p>___</p>
                     </div>
                     <div>
                         <p>6 ml/kg</p>
-                        <input type="number" id="sixMil">
-                        <p>ml</p>
+                        <output type="number" id="sixMil">
+                        <p>___</p>
                     </div>
                     <div>
                         <p>7 ml/kg</p>
-                        <input type="number" id="sevenMil">
-                        <p>ml</p>
+                        <output type="number" id="sevenMil">
+                        <p>___</p>
                     </div>
                     <div>
                         <p>8 ml/kg</p>
-                        <input type="number" id="eightMil">
-                        <p>ml</p>
+                        <output type="number" id="eightMil">
+                        <p>___</p>
                     </div>
                 </form>
             </div>
@@ -58,6 +59,8 @@
         <img src="pictures/ards.jpg" alt="ARDSnet protocol" height="442" width="642">
         <img src="pictures/ards-2.jpg" alt="ARDSnet protocol" height="442" width="642">
     
-    <script src="ARDSnet.js"></script>
+        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+        <script src="ARDSnet.js"></script>
+    
 </body>
 </html>
