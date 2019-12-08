@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
+}
+
+header{
+    background: #b7c7e9 ;
+}
+
+.container{
+    background: #869dce;    
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+}
+#title{
+    display: flex;
+    justify-content: center;
+}
+
+.radio{
+    display:block;
+    margin-left: 2em;
+}
+
+input{
+    margin: 1em;
+}
+
+.patient{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+.volumes{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.volumes p{
+    display: inline;
+}
+
+footer{
+    background: #869dce ;
+    height: 1em;
+}
+
+#calcPrintButton{
+
+}

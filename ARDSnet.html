@@ -8,23 +8,25 @@
     <title>ARDSnet</title>
 </head>
 <body>
-    <div class="container">
-        <h1>ARDSnet</h1>
-            <div>
+    <header>
+        <h1 id="title">ARDSnet</h1>
+    </header>    
+       <div class="container"> 
+            <div class="radio"> 
                 <input type="radio" id="radioMale" name="gender" value="male"> Male<br>
                 <input type="radio" id="radioFemale" name="gender" value="female"> Female<br>
             </div>
-            <div>
+            <div class="patient">
                 <p>Patient's height in cm</p>
-                <input type="number" id="inputHeight" name="height" min="40" max="250">
+                <input type="number" id="inputHeight" name="height" min="40" max="250"><br>
                 <button id="calcPrintButton">Calculate and print</button>
             </div>
-            <div>
+            <div class="volumes">
                 <form>
                     <div>
                         <p>4 ml/kg</p>
                         <input type="number" id="fourMil">
-                        <p>ml</p><br>
+                        <p>ml</p>
                     </div>
                     
                     <div>
@@ -49,9 +51,13 @@
                     </div>
                 </form>
             </div>
+      </div>  
+      <footer>
+          
+      </footer>    
         <img src="pictures/ards.jpg" alt="ARDSnet protocol" height="442" width="642">
         <img src="pictures/ards-2.jpg" alt="ARDSnet protocol" height="442" width="642">
-    </div>
+    
     <script src="ARDSnet.js"></script>
 </body>
 </html>
