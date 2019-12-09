@@ -55,10 +55,16 @@ input{
     text-shadow: #0565a5;
 }
 
+#ventTidVol{
+    font-weight: 800;
+    margin-bottom: 1em;
+    margin-left: -1.5em;
+}
+
 output{
     font-weight: 900;
     font-size: x-large;
-    background-color: #b7c7e9;
+    background-color: #9fb2db;
 }
 
 footer{
@@ -80,7 +86,7 @@ footer{
 
 }
 
-#calcButton::before, #calcButton::after, #printButton::before, #ptintButton::after{
+#calcButton::before, #calcButton::after, #printButton::before, #printButton::after{
     content: "";
     position: absolute;
     width: 14px;
@@ -113,6 +119,3 @@ footer{
         display :  none;
     }
 
-    body {
-        page-break-inside: avoid;
-      }

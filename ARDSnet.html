@@ -19,11 +19,12 @@
             <div class="patient">
                 <p> Patient's height in cm</p>
                 <input type="number" id="inputHeight" min="120" max="250"/> <br>
-                <button id="calcButton">Calculate</button>
+                <button id="calcButton" onclick="doIt()">Calculate</button>
                 <button id="printButton" onclick="window.print()">Print</button>
             </div>
             <div class="volumes">
                 <form>
+                    <div id="ventTidVol">Ventilator Tidal Volumes</div>
                     <div>
                         <p>4 ml/kg</p>
                         <output type="number" id="fourMil">
