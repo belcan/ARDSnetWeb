@@ -7,11 +7,11 @@ function calculateM() {
    let b = parseInt(a);    
    let c = 50 + 0.905 * (b - 152.4);
    
-        document.querySelector("#fourMil").innerHTML = '  ' + c.toFixed(0)*4 + '  ml';
-        document.getElementById("fiveMil").innerHTML = '  ' +  c.toFixed(0)*5 + ' ml';
-        document.getElementById("sixMil").innerHTML = '  ' +  c.toFixed(0)*6 + ' ml';
-        document.getElementById("sevenMil").innerHTML = '   ' +  c.toFixed(0)*7 + ' ml';
-        document.getElementById("eightMil").innerHTML = '   ' +  c.toFixed(0)*8 + ' ml'; 
+        document.querySelector("#fourMil").innerHTML = '  ' + (c * 4).toFixed(0) + '  ml';
+        document.getElementById("fiveMil").innerHTML = '  ' +  (c * 5).toFixed(0) + ' ml';
+        document.getElementById("sixMil").innerHTML = '  ' +  (c * 6).toFixed(0) + ' ml';
+        document.getElementById("sevenMil").innerHTML = '   ' +  (c * 7).toFixed(0) + ' ml';
+        document.getElementById("eightMil").innerHTML = '   ' +  (c * 8).toFixed(0) + ' ml'; 
         
         calcButton.style.visibility='hidden';
         printButton.style.visibility='visible';
@@ -24,17 +24,17 @@ function calculateF() {
     let e = parseInt(d);    
     let f = 45.5 + 0.905 * (e - 152.4);        
         
-        document.getElementById("fourMil").innerHTML = f.toFixed(0)*4 + ' ml';
-        document.getElementById("fiveMil").innerHTML = f.toFixed(0)*5 + ' ml';
-        document.getElementById("sixMil").innerHTML = f.toFixed(0)*6 + ' ml';
-        document.getElementById("sevenMil").innerHTML = f.toFixed(0)*7 + ' ml';
-        document.getElementById("eightMil").innerHTML = f.toFixed(0)*8 + ' ml';
+        document.getElementById("fourMil").innerHTML = (f * 4).toFixed(0) + ' ml';
+        document.getElementById("fiveMil").innerHTML = (f * 5).toFixed(0) + ' ml';
+        document.getElementById("sixMil").innerHTML = (f * 6).toFixed(0) + ' ml';
+        document.getElementById("sevenMil").innerHTML = (f * 7).toFixed(0) + ' ml';
+        document.getElementById("eightMil").innerHTML = (f * 8).toFixed(0) + ' ml';
 
          
         calcButton.style.visibility='hidden';
         printButton.style.visibility='visible';
     }
-
+    (c * 4).toFixed(0)
 
     function doIt() {
         var order = "m";
