@@ -34,7 +34,7 @@ function calculateF() {
         calcButton.style.visibility='hidden';
         printButton.style.visibility='visible';
     }
-    (c * 4).toFixed(0)
+    
 
     function doIt() {
         var order = "m";
